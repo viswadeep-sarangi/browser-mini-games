@@ -38,6 +38,10 @@ gameScene.create = function(){
     this.enemy4.scale = 0.25
 
     console.log(this.enemy1)
+
+    // create the treasure
+    this.treasure = this.add.sprite(600, 180, 'treasure')
+    this.treasure.scale = 0.025
 };
 
 enemy_speed = function(enemy_obj, max_height, speed=2.5){
